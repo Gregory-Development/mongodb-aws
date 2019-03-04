@@ -1,0 +1,15 @@
+---
+config:
+  system:
+    kubectl-executable-path: "/usr/bin/kubectl"
+    kops-executable-path: "/usr/local/bin/kops"
+    terraform-executable-path: "/usr/local/bin/terraform"
+    pip-executable-path: "/usr/bin/pip"
+    awscli-executable-path: "/usr/bin/aws"
+
+  kubernetes:
+
+  amazon-aws:
+    access-key-id: "MYAWSACCESSKEY"
+    secret-access-key: "My@WS$3CRE+ACCe55K3y"
+    region: "us-east-1"
