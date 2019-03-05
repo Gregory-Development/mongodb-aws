@@ -8,6 +8,15 @@ config:
     awscli-executable-path: "/usr/bin/aws"
 
   kubernetes:
+    state-store: "s3://my.aws.bucket"
+    zones:
+      - "us-east-1a"
+      - "us-east-1b"
+      - "us-east-1c"
+    node-count: 5
+    node-size: "t2.micro"
+    master-size: "t2.micro"
+    dns-zone: "k8s.blackbird.ai"
 
   amazon-aws:
     access-key-id: "MYAWSACCESSKEY"
