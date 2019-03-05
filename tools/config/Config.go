@@ -136,6 +136,19 @@ func rhelInstallPackage (cmd string, pkg string) {
 	}
 }
 
+func debInstallAptKey () {
+	var out bytes.Buffer
+	var u = "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+
+	install := exec.Command("apt-key", "adv", "--fetch-keys", u)
+	install.Stdout = &out
+	err := install.Run()
+	if err != nil {
+		log.Fatalf("unable to install %v, are you root?", pkg)
+		os.Exit(1)
+	}
+}
+
 func debInstallPackage (pkg string) {
 	var out bytes.Buffer
 
@@ -158,9 +171,11 @@ func installDependencies(dep string) {
 			rhelInstallPackage("yum", "kubectl")
 		} else if d, _ := detectOS(); d == "ubuntu" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else if d, _ := detectOS(); d == "debian" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else {
 			d, _ := detectOS()
@@ -176,9 +191,11 @@ func installDependencies(dep string) {
 			rhelInstallPackage("yum", "kubectl")
 		} else if d, _ := detectOS(); d == "ubuntu" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else if d, _ := detectOS(); d == "debian" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else {
 			d, _ := detectOS()
@@ -194,9 +211,11 @@ func installDependencies(dep string) {
 			rhelInstallPackage("yum", "kubectl")
 		} else if d, _ := detectOS(); d == "ubuntu" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else if d, _ := detectOS(); d == "debian" {
 			writeDebRepo()
+			debInstallAptKey()
 			debInstallPackage("kubectl")
 		} else {
 			d, _ := detectOS()
