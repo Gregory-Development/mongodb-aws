@@ -128,6 +128,18 @@ func (s *SYS) DebInstallPackage(pkg string) {
 	}
 }
 
+func (s *SYS) PipInstallPackage(pkg string) {
+	var out bytes.Buffer
+
+	install := exec.Command("pip", "install", pkg)
+	install.Stdout = &out
+	err := install.Run()
+	if err != nil {
+		log.Fatalf("unable to install %v, are you root?", pkg)
+		os.Exit(1)
+	}
+}
+
 func (s *SYS) InstallDependencies(dep string) {
 	if dep == "kubectl" {
 		if s.Distro == "fedora" {
@@ -200,22 +212,7 @@ func (s *SYS) InstallDependencies(dep string) {
 			os.Exit(1)
 		}
 	} else if dep == "aws" {
-		if s.Distro == "fedora" {
-			s.WriteRhelRepo()
-			s.RhelInstallPackage("dnf", "kubectl")
-		} else if s.Distro == "centos" {
-			s.WriteRhelRepo()
-			s.RhelInstallPackage("yum", "kubectl")
-		} else if s.Distro == "ubuntu" {
-			s.WriteDebRepo()
-			s.DebInstallPackage("kubectl")
-		} else if s.Distro == "debian" {
-			s.WriteDebRepo()
-			s.DebInstallPackage("kubectl")
-		} else {
-			log.Fatalf("%v is not current supported", s.Distro)
-			os.Exit(1)
-		}
+		s.PipInstallPackage("aws")
 	} else {
 		return
 	}
