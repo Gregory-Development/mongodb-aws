@@ -1,14 +1,14 @@
 package kubernetes
 
 type Node struct {
-	Kind string `json:"kind"`
-	ApiVersion string `json:"apiVersion"`
-	Metadata nodeMetadata `json:"metadata"`
+	Kind       string       `json:"kind"`
+	ApiVersion string       `json:"apiVersion"`
+	Metadata   nodeMetadata `json:"metadata"`
 }
 
 type nodeMetadata struct {
-	Name string `json:"name"`
-	Labels label `json:"labels"`
+	Name   string `json:"name"`
+	Labels label  `json:"labels"`
 }
 
 type label struct {

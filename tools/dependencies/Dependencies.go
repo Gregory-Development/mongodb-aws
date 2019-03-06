@@ -21,8 +21,8 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 const debK8sRepo = "deb https://apt.kubernetes.io/ kubernetes-xenial main"
 
 type SYS struct {
-	OS string
-	Arch string
+	OS     string
+	Arch   string
 	Distro string
 }
 
@@ -38,7 +38,7 @@ func ValidateExecutables(ex string) (err error) {
 func (s *SYS) DetectDistro() {
 	var out bytes.Buffer
 	var distro = regexp.MustCompile(`^NAME=(.+?)\n`)
-	
+
 	if s.OS == "linux" {
 		cmd := exec.Command("/usr/bin/lsb_release", "-a")
 		cmd.Stdout = &out
@@ -50,9 +50,9 @@ func (s *SYS) DetectDistro() {
 
 		result := distro.FindStringSubmatch(string(out.Bytes()))
 		distStr := strings.Split(result[0], "=")
-		s.Distro = strings.ToLower(distStr[1])	
+		s.Distro = strings.ToLower(distStr[1])
 	}
-	
+
 }
 
 func (s *SYS) DetectOS() {
