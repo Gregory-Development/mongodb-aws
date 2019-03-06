@@ -29,9 +29,11 @@ The following applications are required to be installed on the provisioning syst
 Using Kops, perform the following:
 
 1) Creating the cluster:
+  
   `kops create cluster --state=s3://<THE BUCKET YOU CREATED PREVIOUSLY> --name=<THE DNS ZONE YOU WISH TO USE> --zones=<A COMMA SEPARATED LIST OF AWS AZs TO USE> --node-count=<NUMBER OF NODES TO PROVISION> --node-size=<EC2 INSTANCE SIZE TO PROVISION> --master-count=<NUMBER OF MASTER NODES PER AZ> --master-type=<EC2 INSTANCE SIZE TO PROVISION FOR MASTER NODES>`
   
 2) Once complete, Kops will create the state files, to apply the configuration to AWS:
+  
   `kops update cluster <WHATEVER YOU PROVISIONED IN --name PREVIOUSLY> --state=s3://<THE BUCKET YOU CREATED IN THE PREREQS> --yes`
 
 3) Kops will then deploy the cluster
@@ -40,12 +42,14 @@ Using Kops, perform the following:
   Follow the instructions [here](https://helm.sh/docs/using_helm/) to install the helm client
   
 5) Install Helm to our cluster with the following:
+  
   `helm init`
   
 6) Grab the MongoDB production deployment Helm Chart template from [here](https://raw.githubusercontent.com/kubernetes/charts/master/stable/mongodb/values-production.yaml)
   Feel free to customize the template as necessary for your environment
 
 7) Deploy the new MongoDB cluster with the following commands:
+  
   `helm install --name <WHATEVER YOU WOULD LIKE TO CALL IT> -f <PATH TO THE values-production.yaml FILE> stable/mongodb`
 
 8) Rinse and Repeat steps 6 & 7 to deploy multiple MongoDB clusters
@@ -55,6 +59,7 @@ Using Kops, perform the following:
 To increase the number of worker nodes, perform the following steps:
 
 1) Edit the cluster spec file:
+  
   `kops edit instancegroup nodes --name=<THE NAME OF YOUR CLUSTER> --state=s3://<YOUR STATE BUCKET>`
   
 2) Find the `maxSize` and `minSize` entries under spec and modify them to you desired number
