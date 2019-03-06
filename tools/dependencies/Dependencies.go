@@ -111,7 +111,7 @@ func (s *SYS) DebInstallAptKey() {
 	install.Stdout = &out
 	err := install.Run()
 	if err != nil {
-		log.Fatalf("unable to install %v, are you root?", pkg)
+		log.Fatalf("unable to install apt-get key %v, are you root?", u)
 		os.Exit(1)
 	}
 }

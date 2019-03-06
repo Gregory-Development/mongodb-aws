@@ -98,7 +98,7 @@ func (k *K8S) NewCluster(stateStoreBucketName string, clusterName string) {
 	install.Stdout = &out
 	err := install.Run()
 	if err != nil {
-		log.Fatalf("unable to install %v, are you root?", pkg)
+		log.Fatalf("error running kops: %v", err)
 		os.Exit(1)
 	}
 }
