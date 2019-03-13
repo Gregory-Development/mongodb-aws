@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kops/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/bin/configuration.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/bin/k8s-update_v1.0.0_Linux_x86_64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/kubernetes/Cluster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/kubernetes/Nodes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Cluster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Nodes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/mongo/Cluster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd/mongo/TEST_Cluster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/config/Config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/config/TEST_Config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/configuration.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/dependencies/Dependencies.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/dependencies/TEST_Dependencies.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/main.go" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="432">
+                <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>^NAME=(.+?)\n</find>
+      <find>(d, _ := DetectOS\(\); d)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>s.Distro</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/lib/golang" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="devel" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tools/main.gpo.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/NewCluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/ModifyCluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/TEST_NewCluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/TEST_ModifyCluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/DeleteCluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/TEST_DeleteCluster.go" />
+        <option value="$PROJECT_DIR$/tools/config/TEST_Config.go" />
+        <option value="$PROJECT_DIR$/tools/config/test" />
+        <option value="$PROJECT_DIR$/tools/system/Dependencies.go" />
+        <option value="$PROJECT_DIR$/tools/dependencies/TEST_Dependencies.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/mongo/Cluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/kubernetes/Nodes.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Cluster.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Nodes.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/mongo/TEST_Cluster.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/tools/config/Config.go" />
+        <option value="$PROJECT_DIR$/tools/main.go" />
+        <option value="$PROJECT_DIR$/tools/cmd/kubernetes/Cluster.go" />
+        <option value="$PROJECT_DIR$/tools/dependencies/Dependencies.go" />
+        <option value="$PROJECT_DIR$/tools/configuration.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tools/bin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="" />
+      <created>1551635839144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551635839144</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.065101385" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32982087" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31995663" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Google Cloud Storage" order="3" />
+      <window_info anchor="right" id="Cargo" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Json Parser" order="6" />
+      <window_info anchor="right" id="Jenkins" order="7" />
+      <window_info anchor="right" id="make" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tools/main.gpo.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/NewCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/ModifyCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_NewCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_ModifyCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/DeleteCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_DeleteCluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/bin/configuration.yml" />
+    <entry file="file://$PROJECT_DIR$/kops/.keep" />
+    <entry file="file://$PROJECT_DIR$/terraform/.keep" />
+    <entry file="file://$PROJECT_DIR$/tools/config/TEST_Config.go" />
+    <entry file="file://$PROJECT_DIR$/tools/config/test" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/mongo/Cluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Cluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/TEST_Nodes.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/mongo/TEST_Cluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/dependencies/TEST_Dependencies.go" />
+    <entry file="file://$PROJECT_DIR$/tools/config/Config.go" />
+    <entry file="file://$PROJECT_DIR$/tools/main.go" />
+    <entry file="file://$PROJECT_DIR$/go.mod" />
+    <entry file="file://$PROJECT_DIR$/tools/dependencies/Dependencies.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/Cluster.go" />
+    <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/Nodes.go" />
+    <entry file="file://$PROJECT_DIR$/tools/configuration.yml" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

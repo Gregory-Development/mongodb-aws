@@ -1,74 +1,111 @@
 # MongoDB Clusters on Kubernetes on AWS via KOPS/HELM
 ---
 
-### Prereqs
+## Prereqs
 
-The following applications are required to be installed on the provisioning system:
+_GOLANG_
+[https://golang.org/doc/install](https://golang.org/doc/install)
 
-* Kubectl (https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-* Kops (https://github.com/kubernetes/kops)
-* Python pip (https://pypi.org/project/pip/)
-* AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+_JQ_
+`sudo yum install jq -y` or `sudo dnf install jq -y` or `sudo apt-get install jq -y`
 
-### AWS Prereqs
+_KUBECTL_
 
-* A Programmatic access user with the following permissions:
-  * AmazonEC2FullAccess
-  * AmazonRoute53FullAccess
-  * AmazonS3FullAccess
-  * IAMFullAccess
-  * AmazonVPCFullAccess
-  * See [this article](https://github.com/kubernetes/kops/blob/master/docs/aws.md#setup-iam-user) for how to do this programmatically
-* An S3 bucket to store the kubernetes cluster state
-  * See [the article](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/) for how to do this programmatically.
-* A DNS (Route53 or other) domain or subdomain to assign to the new kubernetes cluster
-  * See [this article](https://aws.amazon.com/blogs/compute/kubernetes-clusters-aws-kops/) for how to do this programmatically.
+`sudo curl --silent --location -o /usr/local/bin/kubectl "https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/kubectl"`
 
-### Creating the cluster
+`sudo chmod +x /usr/local/bin/kubectl`
 
-Using Kops, perform the following:
+_AWS-IAM-Authenticator_
 
-1) Creating the cluster:
-  
-  `kops create cluster --state=s3://<THE BUCKET YOU CREATED PREVIOUSLY> --name=<THE DNS ZONE YOU WISH TO USE> --zones=<A COMMA SEPARATED LIST OF AWS AZs TO USE> --node-count=<NUMBER OF NODES TO PROVISION> --node-size=<EC2 INSTANCE SIZE TO PROVISION> --master-count=<NUMBER OF MASTER NODES PER AZ> --master-type=<EC2 INSTANCE SIZE TO PROVISION FOR MASTER NODES>`
-  
-2) Once complete, Kops will create the state files, to apply the configuration to AWS:
-  
-  `kops update cluster <WHATEVER YOU PROVISIONED IN --name PREVIOUSLY> --state=s3://<THE BUCKET YOU CREATED IN THE PREREQS> --yes`
+`go get -u -v github.com/kubernetes-sigs/aws-iam-authenticator/cmd/aws-iam-authenticator`
 
-3) Kops will then deploy the cluster
+`sudo mv ~/go/bin/aws-iam-authenticator /usr/local/bin/aws-iam-authenticator`
 
-4) We then have to install Helm to make application installation much easier
-  Follow the instructions [here](https://helm.sh/docs/using_helm/) to install the helm client
-  
-5) Install Helm to our cluster with the following:
-  
-  `helm init`
-  
-6) Grab the MongoDB production deployment Helm Chart template from [here](https://raw.githubusercontent.com/kubernetes/charts/master/stable/mongodb/values-production.yaml)
-  Feel free to customize the template as necessary for your environment
+_EKSCTL_
 
-7) Deploy the new MongoDB cluster with the following commands:
-  
-  `helm install --name <WHATEVER YOU WOULD LIKE TO CALL IT> -f <PATH TO THE values-production.yaml FILE> stable/mongodb`
+`curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp`
 
-8) Rinse and Repeat steps 6 & 7 to deploy multiple MongoDB clusters
-  
-### Increasing the amount of Kubernetes worker nodes
+`sudo mv -v /tmp/eksctl /usr/local/bin`
 
-To increase the number of worker nodes, perform the following steps:
+_HELM_
 
-1) Edit the cluster spec file:
-  
-  `kops edit instancegroup nodes --name=<THE NAME OF YOUR CLUSTER> --state=s3://<YOUR STATE BUCKET>`
-  
-2) Find the `maxSize` and `minSize` entries under spec and modify them to you desired number
+`curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh`
 
-3) Update the cluster with the new configuration:
-  `kops update cluster <THE NAME OF YOUR CLUSTER> --yes`
+`chmod +x get_helm.sh`
 
-### Increase the amount of MongoDB replicas
+`./get_helm.sh`
 
-Increasing the number MondoDB replicas running is accomplished with the following command:
+## Starting a new EKS cluster and installing helm
 
-`kubectl scale statefulset <THE NAME OF THE MONGODB CLUSTER TO SCALE> --replicas=<NUMBER TO SCALE TO>`
+First we need to build a new EKS (Kubernetes) cluster -- this will take roughly 15 minutes the first time
+
+```bash
+eksctl create cluster \
+  --name=<unique name for your cluster - string> \
+  --nodes=<number of worker nodes - int> \
+  --node-type=<the ec2 instance size to use> \
+  --node-ami=auto \
+  --node-volume-size=<the size of the node volumes to create> \
+  --node-volume-type=<the type of volume to create - e.g. io1> \
+  --region=<the aws region to deploy to - string> \
+  --asg-access
+```
+
+By default, this command will create all of the necessary files to connect directly to you cluster (located in ./kubeconfig/config)
+You can verify that it works with the command `kubectl get nodes`
+
+We now need to enable role based access control on the cluster (RBAC), to do this, do the following:
+
+```bash
+cat <<EoF > ~/rbac.yaml
+ ---
+ apiVersion: v1
+ kind: ServiceAccount
+ metadata:
+   name: tiller
+   namespace: kube-system
+ ---
+ apiVersion: rbac.authorization.k8s.io/v1beta1
+ kind: ClusterRoleBinding
+ metadata:
+   name: tiller
+ roleRef:
+   apiGroup: rbac.authorization.k8s.io
+   kind: ClusterRole
+   name: cluster-admin
+ subjects:
+   - kind: ServiceAccount
+     name: tiller
+     namespace: kube-system
+ EoF
+```
+ 
+Now, we have to apply this config to our cluster and set up our local helm:
+ 
+`kubectl apply -f ~/rbac.yaml`
+ 
+`helm init --service-account tiller`
+
+We now want to update all of our helm repositories:
+
+`helm repo update`
+
+Now we want to install MongoDB
+
+`curl -O https://raw.githubusercontent.com/kubernetes/charts/master/stable/mongodb/values-production.yaml`
+
+`helm install --name <name for the mongodb cluster> -f ./values-production.yaml stable/mongodb`
+
+## Scaling
+
+### EKS
+
+To manually scale the worker nodes:
+
+`eksctl scale nodegroup --cluster=<name of your cluster> --nodes=<desired count> --name=<the name of the nodegroup>`
+
+### MongoDB
+
+To scale mongo, simply run the following commands:
+
+`kubectl scale statefulset <the name of your mongodb cluster>-mongodb-secondary --replicas=<number of replicas to spin up>`
