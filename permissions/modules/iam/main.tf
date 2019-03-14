@@ -3,6 +3,7 @@ data "aws_region" "current" {}
 module "iam-user" {
   source = "./user"
   region = "${data.aws_region.current.name}"
+  update-env = "${var.update-env}"
 }
 
 module "group" {

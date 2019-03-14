@@ -4,4 +4,5 @@ provider "aws" {
 
 module "eksctl-user-group-policy" {
   source = "./modules/iam"
+  update-env = ""
 }
