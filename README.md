@@ -35,6 +35,27 @@ _HELM_
 
 `./get_helm.sh`
 
+_TERRAFORM_
+
+`curl --silent -o /tmp/terraform.zip --location "https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip" | sudo unzip -o /tmp/terraform.zip -d /usr/local/bin` 
+
+## Creating the user
+
+To do this perform the following:
+
+```bash
+git clone <this repo>
+git checkout eksctl
+cd permissions
+terraform init
+terraform apply
+
+```
+
+You will be prompted to accept the changes. The credentials file will be outputted into this directory so you can either append it to an existing ~/.aws/credentials file or create that directory and place the file there.
+
+Make sure that you export your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_REGION environmental variables and/or set the AWS_PROFILE variable to be "eksctl".
+
 ## Starting a new EKS cluster and installing helm
 
 First we need to build a new EKS (Kubernetes) cluster -- this will take roughly 15 minutes the first time
@@ -57,7 +78,7 @@ You can verify that it works with the command `kubectl get nodes`
 We now need to enable role based access control on the cluster (RBAC), to do this, do the following:
 
 ```bash
-cat <<EoF > ~/rbac.yaml
+cat <<EOF > ~/rbac.yaml
  ---
  apiVersion: v1
  kind: ServiceAccount
@@ -77,7 +98,7 @@ cat <<EoF > ~/rbac.yaml
    - kind: ServiceAccount
      name: tiller
      namespace: kube-system
- EoF
+ EOF
 ```
  
 Now, we have to apply this config to our cluster and set up our local helm:
@@ -95,6 +116,14 @@ Now we want to install MongoDB
 `curl -O https://raw.githubusercontent.com/kubernetes/charts/master/stable/mongodb/values-production.yaml`
 
 `helm install --name <name for the mongodb cluster> -f ./values-production.yaml stable/mongodb`
+
+You can verify the pod is running with the command:
+
+`kubectl get pods`
+`kubectl get deployments`
+`kubectl get services`
+
+if the mongodb service is up with a port, you simply just need to point applications to the "CLUSTER IP:PORT" to access the database.
 
 ## Scaling
 
