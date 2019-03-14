@@ -48,11 +48,13 @@ git clone <this repo>
 git checkout eksctl
 cd permissions
 terraform init
-terraform apply
+terraform apply -var="update-env=1"
 
 ```
 
-You will be prompted to accept the changes. The credentials file will be outputted into this directory so you can either append it to an existing ~/.aws/credentials file or create that directory and place the file there.
+You will be prompted to accept the changes. Your local AWS environment variables will be updated to the values of this new user and the credentials file will be outputted into this directory so you can either append it to an existing ~/.aws/credentials file or create that directory and place the file there.
+
+_NOTE_: If you do not want to update your environmental variables, instead of `terraform apply -var="update-env=1"`, use `terraform apply -var="update-env=0"`
 
 Make sure that you export your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_REGION environmental variables and/or set the AWS_PROFILE variable to be "eksctl".
 
