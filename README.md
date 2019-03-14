@@ -46,7 +46,7 @@ eksctl create cluster \
   --node-type=<the ec2 instance size to use> \
   --node-ami=auto \
   --node-volume-size=<the size of the node volumes to create> \
-  --node-volume-type=<the type of volume to create - e.g. io1> \
+  --node-volume-type=<the type of volume to create - e.g. gp2> \
   --region=<the aws region to deploy to - string> \
   --asg-access
 ```
