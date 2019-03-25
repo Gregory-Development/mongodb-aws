@@ -15,4 +15,5 @@
 
 *.tfstate
 *.backup
-permissions/.terraform/*
+terraform/.terraform
+*.retry

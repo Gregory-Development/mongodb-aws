@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mongo-aws.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mongo-aws.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-membership/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-membership/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/playbook.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-membership/vars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-policy/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-policy/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group-policy/vars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group/outputs.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/group/vars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/outputs.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/user/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/user/vars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/modules/iam/vars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/vars.tf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,35 +33,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/permissions/modules/iam/main.tf">
+        <entry file="file://$PROJECT_DIR$/terraform/main.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+            <state relative-caret-position="548">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/main.tf">
+        <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/vars.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="548">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/vars.tf">
+        <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
+            <state relative-caret-position="345">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf">
+        <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/outputs.tf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
@@ -50,10 +79,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/main.tf">
+        <entry file="file://$PROJECT_DIR$/terraform/outputs.tf">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/verify_mongo/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="108" column="3" selection-start-line="108" selection-start-column="3" selection-end-line="108" selection-end-column="3" />
+            <state relative-caret-position="253">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -64,6 +107,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,22 +125,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="devel" />
+        <entry key="$PROJECT_DIR$" value="eksctl" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tools/main.gpo.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/NewCluster.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/ModifyCluster.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/TEST_NewCluster.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/TEST_ModifyCluster.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/DeleteCluster.go" />
-        <option value="$PROJECT_DIR$/tools/cmd/TEST_DeleteCluster.go" />
-        <option value="$PROJECT_DIR$/tools/config/TEST_Config.go" />
-        <option value="$PROJECT_DIR$/tools/config/test" />
         <option value="$PROJECT_DIR$/tools/system/Dependencies.go" />
         <option value="$PROJECT_DIR$/tools/dependencies/TEST_Dependencies.go" />
         <option value="$PROJECT_DIR$/tools/cmd/mongo/Cluster.go" />
@@ -110,14 +145,11 @@
         <option value="$PROJECT_DIR$/tools/cmd/kubernetes/Cluster.go" />
         <option value="$PROJECT_DIR$/tools/dependencies/Dependencies.go" />
         <option value="$PROJECT_DIR$/tools/configuration.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/role/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/user-policy/vars.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/user-policy/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy/vars.tf" />
-        <option value="$PROJECT_DIR$/permissions/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/vars.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/main.tf" />
@@ -126,23 +158,45 @@
         <option value="$PROJECT_DIR$/permissions/modules/iam/group/outputs.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy/outputs.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/user/main.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/user/vars.tf" />
+        <option value="$PROJECT_DIR$/permissions/modules/iam/vars.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/main.tf" />
+        <option value="$PROJECT_DIR$/permissions/main.tf" />
+        <option value="$PROJECT_DIR$/permissions/vars.tf" />
+        <option value="$PROJECT_DIR$/permissions/modules/iam/user/main.tf" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/client_app/mods/mongo.py" />
+        <option value="$PROJECT_DIR$/mods/ec2/vars.tf" />
+        <option value="$PROJECT_DIR$/mods/ec2/main.tf" />
+        <option value="$PROJECT_DIR$/mods/ec2_instances/main.tf" />
+        <option value="$PROJECT_DIR$/mods/security_groups/vars.tf" />
+        <option value="$PROJECT_DIR$/mods/security_groups/main.tf" />
+        <option value="$PROJECT_DIR$/mods/security_groups/outputs.tf" />
+        <option value="$PROJECT_DIR$/mods/ec2_instances/vars.tf" />
+        <option value="$PROJECT_DIR$/main.tf" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/terraform/outputs.tf" />
+        <option value="$PROJECT_DIR$/terraform/mods/ec2_instances/outputs.tf" />
+        <option value="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" />
+        <option value="$PROJECT_DIR$/ansible/playbook.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/verify_mongo/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/terraform/mods/ec2_instances/vars.tf" />
+        <option value="$PROJECT_DIR$/terraform/main.tf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="x" value="1513" />
+    <option name="width" value="1717" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,50 +207,36 @@
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="iam" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="iam" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+              <item name="mods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="iam" type="462c0819:PsiDirectoryNode" />
-              <item name="group-policy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
-              <item name="permissions" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="iam" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+              <item name="mods" type="462c0819:PsiDirectoryNode" />
+              <item name="ec2_instances" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,14 +247,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/permissions/modules/iam/user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tools/bin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/terraform" />
+      <recent name="$PROJECT_DIR$/permissions/modules/iam/user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,6 +270,9 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="" />
@@ -236,14 +280,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551635839144</updated>
+      <workItem from="1553090782265" duration="2173000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2173000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19103523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19103523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -256,8 +303,10 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31995663" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30347735" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="GitLabIntegration" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -267,23 +316,13 @@
       <window_info anchor="right" id="Json Parser" order="6" />
       <window_info anchor="right" id="Jenkins" order="7" />
       <window_info anchor="right" id="make" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/main.gpo.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/NewCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/ModifyCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_NewCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_ModifyCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/DeleteCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/cmd/TEST_DeleteCluster.go" />
-    <entry file="file://$PROJECT_DIR$/tools/bin/configuration.yml" />
     <entry file="file://$PROJECT_DIR$/kops/.keep" />
     <entry file="file://$PROJECT_DIR$/terraform/.keep" />
     <entry file="file://$PROJECT_DIR$/tools/config/TEST_Config.go" />
@@ -300,37 +339,7 @@
     <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/Cluster.go" />
     <entry file="file://$PROJECT_DIR$/tools/cmd/kubernetes/Nodes.go" />
     <entry file="file://$PROJECT_DIR$/tools/configuration.yml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="437">
-            <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/vars.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/vars.tf" />
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group/main.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -338,13 +347,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/main.tf" />
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/vars.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -378,16 +381,6 @@
         <state relative-caret-position="-2829" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/outputs.tf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="108" column="3" selection-start-line="108" selection-start-column="3" selection-end-line="108" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -395,24 +388,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/vars.tf">
+    <entry file="file://$PROJECT_DIR$/permissions/credentials" />
+    <entry file="file://$PROJECT_DIR$/client_app/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_app/mods/aws.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_app/mods/mongo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
+        <state relative-caret-position="306">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="291">
+            <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/main.tf">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="125" selection-start-line="1" selection-start-column="125" selection-end-line="1" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/group-policy/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="36" selection-start-line="12" selection-end-line="102" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/security_groups/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/security_groups/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/security_groups/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/verify_mongo/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/vars.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,12 @@
+---
+- name: Update Mongo
+  become: yes
+  yum:
+    name: mongodb-org
+    state: latest
+- name: Verify Service Is Enabled and Running
+  become: yes
+  systemd:
+    name: mongod
+    enabled: yes
+    state: started
