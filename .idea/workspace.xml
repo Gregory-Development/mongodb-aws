@@ -2,56 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/handlers/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/inventory/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/meta/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/templates/mongod.conf.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tests/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/vars/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/files/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/handles/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/inventory/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/meta/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.service.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tests/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/vars/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/files/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/handles/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/inventory/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/meta/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tests/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/vars/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/files/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/handles/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/inventory/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/meta/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/templates/mongodb-org-4.0.repo.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/tests/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/vars/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/files/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/handles/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/inventory/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/meta/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/templates/mongod.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tests/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/vars/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/hosts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/playbook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/playbook.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/files/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/files/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/handles/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/handles/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/inventory/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/inventory/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/meta/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/tests/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/templates/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/vars/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/tests/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/defaults/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/verify_mongo/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/files/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/defaults/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/files/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/files/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/handles/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/handles/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/inventory/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/inventory/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/meta/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tasks/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/templates/mongod.conf.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tests/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tests/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/vars/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" afterDir="false" />
     </list>
@@ -64,24 +41,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/tasks/main.yml">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="-211">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/defaults/main.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-464">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="341">
+              <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="187" />
             </state>
           </provider>
         </entry>
@@ -90,7 +71,52 @@
         <entry file="file://$PROJECT_DIR$/terraform/main.tf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
-              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/templates/mongod.conf.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/templates/mongod.conf.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/templates/mongod.conf.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -126,12 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy-attachment/main.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/group-membership/vars.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/group-membership/main.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/group/outputs.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/group-policy/outputs.tf" />
-        <option value="$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/user/vars.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/vars.tf" />
         <option value="$PROJECT_DIR$/permissions/modules/iam/main.tf" />
@@ -157,25 +177,31 @@
         <option value="$PROJECT_DIR$/ansible/mongod.conf" />
         <option value="$PROJECT_DIR$/ansible/config-mongod.conf" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/vars/main.yml" />
-        <option value="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" />
         <option value="$PROJECT_DIR$/ansible/roles/install_mongo/templates/mongodb-org-4.0.repo.j2" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/handlers/main.yml" />
         <option value="$PROJECT_DIR$/ansible/test.yml" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/defaults/main.yml" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/templates/mongod.conf.j2" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" />
         <option value="$PROJECT_DIR$/ansible/hosts" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.service.j2" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2" />
-        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards/defaults/main.yml" />
         <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tasks/main.yml" />
         <option value="$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" />
         <option value="$PROJECT_DIR$/ansible/playbook.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/defaults/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/defaults/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/defaults/main.yml" />
+        <option value="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/templates/mongod.conf.j2" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/templates/mongod.conf.j2" />
         <option value="$PROJECT_DIR$/terraform/main.tf" />
       </list>
     </option>
@@ -208,6 +234,113 @@
               <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
               <item name="ansible" type="462c0819:PsiDirectoryNode" />
               <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_config_servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_config_servers" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_config_servers" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_query_router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_query_router" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_query_router" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_shards_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_shards_1" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_shards_1" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_shards_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_cluster_shards_2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_mongo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-aws" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="install_mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-aws" type="b2602c69:ProjectViewProjectNode" />
@@ -287,9 +420,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19103523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19103523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30347735" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30347735" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="GitLabIntegration" order="13" />
@@ -322,23 +454,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/outputs.tf" />
-    <entry file="file://$PROJECT_DIR$/permissions/credentials" />
-    <entry file="file://$PROJECT_DIR$/client_app/main.py" />
-    <entry file="file://$PROJECT_DIR$/client_app/mods/aws.py" />
-    <entry file="file://$PROJECT_DIR$/client_app/mods/mongo.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permissions/modules/iam/main.tf" />
-    <entry file="file://$PROJECT_DIR$/permissions/main.tf" />
     <entry file="file://$PROJECT_DIR$/permissions/vars.tf" />
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/vars.tf" />
     <entry file="file://$PROJECT_DIR$/permissions/modules/iam/user/main.tf" />
@@ -388,9 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/outputs.tf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/meta/main.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -405,7 +517,7 @@
     <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/meta/main.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards/meta/main.yml">
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/meta/main.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/vars/main.yml">
@@ -419,13 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -443,38 +548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/defaults/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/templates/mongod.conf.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/handlers/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -485,82 +562,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="27" column="191" selection-start-line="22" selection-end-line="27" selection-end-column="191" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/meta/main.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards/defaults/main.yml">
+    <entry file="file://$PROJECT_DIR$/terraform/.terraform.tfstate.lock.info">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/hosts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="184">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/playbook.retry">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/vars/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/defaults/main.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml">
+    <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/files/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/handles/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/outputs.tf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/meta/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="94" />
+        <state relative-caret-position="667">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/roles/add_shards_to_cluster/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="207">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="-211">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/.terraform.tfstate.lock.info">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/templates/mongod.conf.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/templates/mongod.conf.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/templates/mongod.conf.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/terraform/main.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,28 @@
+---
+- name: Stop mongod
+  become: yes
+  systemd:
+    name: mongod
+    state: stopped
+
+- name: Add mongod.conf file
+  become: yes
+  template:
+    src: mongod.conf.j2
+    dest: /etc/mongod.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Start Mongod
+  become: yes
+  systemd:
+    name: mongod
+    state: started
+
+- name: Initialize ReplicaSet
+  vars:
+    conf0: "{{ hostvars[groups['mongo-shard-2-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    conf1: "{{ hostvars[groups['mongo-shard-2-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    init_cmd: "{ _id: \"shardOneReplSet\", members: [ { _id: 0, host: \"{{ conf0 }}:27017\" }, { _id: 1, host: \"{{ conf1 }}:27017\" } ] }"
+  command: mongo localhost:27019 -u "{{ mongo_admin_username }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(rs.initiate("{{ init_cmd }}"))\'

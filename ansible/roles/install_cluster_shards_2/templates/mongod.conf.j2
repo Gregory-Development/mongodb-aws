@@ -10,10 +10,10 @@ systemLog:
   path: /var/log/mongodb/mongod.log
 
 # Where and how to store data.
-#storage:
-#  dbPath: /var/lib/mongo
-#  journal:
-#    enabled: true
+storage:
+  dbPath: /var/lib/mongo
+  journal:
+    enabled: true
 #  engine:
 #  mmapv1:
 #  wiredTiger:
@@ -21,12 +21,12 @@ systemLog:
 # how the process runs
 processManagement:
   fork: true  # fork and run in background
-  pidFilePath: /var/run/mongodb/mongos.pid  # location of pidfile
+  pidFilePath: /var/run/mongodb/mongod.pid  # location of pidfile
   timeZoneInfo: /usr/share/zoneinfo
 
 # network interfaces
 net:
-  port: {{ mongo_port }}
+#  port: {{ mongo_port }}
   bindIp: {{ mongo_ip_address }}  # Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.
 
 
@@ -38,8 +38,8 @@ security:
 replication:
   replSetName: {{ repl_set_name }}
 
-sharding:
-  configDB: configReplSet/{{ conf0 }}:27019,{{ conf1 }}:27019,{{ conf2 }}:27019
+#sharding:
+#  clusterRole: "configsvr"
 
 ## Enterprise-Only Options
 

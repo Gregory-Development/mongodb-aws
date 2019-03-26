@@ -7,24 +7,6 @@
     state: present
     roles: root
 
-- name: Create new MongoDB opt directory
-  become: yes
-  file:
-    name: /opt/mongodb
-    state: directory
-
-- name: Generate New Keys
-  become: yes
-  raw: openssl rand -base64 756 | sudo tee /opt/mongodb/mongodb-keyfile
-
-- name: Change keyfile ownership
-  become: yes
-  file:
-    path: /opt/mongodb/mongodb-keyfile
-    owner: mongod
-    group: mongod
-    mode: 0400
-
 - name: Stop Mongo
   become: yes
   systemd:

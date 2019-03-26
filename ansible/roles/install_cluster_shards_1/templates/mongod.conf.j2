@@ -26,17 +26,17 @@ processManagement:
 
 # network interfaces
 net:
-  port: {{ mongo_port }}
+#  port: {{ mongo_port }}
   bindIp: {{ mongo_ip_address }}  # Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.
 
 
-#security:
-#  keyFile: /opt/mongodb/mongodb-keyfile
+security:
+  keyFile: /opt/mongodb/mongodb-keyfile
 
 #operationProfiling:
 
-#replication:
-#  replSetName: configReplSet
+replication:
+  replSetName: {{ repl_set_name }}
 
 #sharding:
 #  clusterRole: "configsvr"

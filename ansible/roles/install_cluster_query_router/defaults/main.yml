@@ -3,3 +3,4 @@ mongo_admin_username: mongo-admin
 mongo_admin_password: testtesttest123
 mongo_port: 27017
 mongo_ip_address: 0.0.0.0
+repl_set_name: queryRouterReplSet
