@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/files/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/handles/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/inventory/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/meta/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/templates/mongod.conf.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/tests/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_2/vars/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/playbook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/playbook.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_config_servers/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/defaults/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_query_router/templates/mongos.conf.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/defaults/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/files/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/files/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/handles/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/handles/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/inventory/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/inventory/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/meta/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tasks/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/templates/mongod.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/templates/mongod.conf.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/tests/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/tests/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_cluster_shards/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_cluster_shards_1/vars/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/install_mongo/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/mods/ec2_instances/main.tf" afterDir="false" />
-    </list>
+    <list default="true" id="f82c1335-9779-4d84-987f-54b2969e62d8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
