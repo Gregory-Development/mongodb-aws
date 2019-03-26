@@ -17,3 +17,4 @@
 *.backup
 terraform/.terraform
 *.retry
+ansible/hosts

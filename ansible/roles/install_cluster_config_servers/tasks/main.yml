@@ -1,0 +1,55 @@
+---
+- name: Add Mongo Admin User
+  mongodb_user:
+    database: admin
+    name: "{{ mongo_admin_username }}"
+    password: "{{ mongo_admin_password }}"
+    state: present
+    roles: root
+
+- name: Create new MongoDB opt directory
+  become: yes
+  file:
+    name: /opt/mongodb
+    state: directory
+
+- name: Generate New Keys
+  become: yes
+  raw: openssl rand -base64 756 | sudo tee /opt/mongodb/mongodb-keyfile
+
+- name: Change keyfile ownership
+  become: yes
+  file:
+    path: /opt/mongodb/mongodb-keyfile
+    owner: mongod
+    group: mongod
+    mode: 0400
+
+- name: Stop Mongo
+  become: yes
+  systemd:
+    name: mongod
+    state: stopped
+
+- name: Add mongo config file
+  become: yes
+  template:
+    src: mongod.conf.j2
+    dest: /etc/mongod.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Start Mongo
+  become: yes
+  systemd:
+    name: mongod
+    state: started
+
+- name: Initialize ReplicaSet
+  vars:
+    conf0: "{{ hostvars[groups['mongo-config-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    conf1: "{{ hostvars[groups['mongo-config-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    conf2: "{{ hostvars[groups['mongo-config-hosts'][2]]['ansible_eth0']['ipv4']['address'] }}"
+    init_cmd: "{ _id: \"configReplSet\", configsvr: true, members: [ { _id: 0, host: \"{{ conf0 }}:27019\" }, { _id: 1, host: \"{{ conf1 }}:27019\" }, { _id: 2, host: \"{{ conf2 }}:27019\" } ] }"
+  command: mongo localhost:27019 -u "{{ mongo_admin_username }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(rs.initiate("{{ init_cmd }}"))\'

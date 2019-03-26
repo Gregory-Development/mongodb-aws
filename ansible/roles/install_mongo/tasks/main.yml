@@ -1,0 +1,29 @@
+---
+- name: Add Mongo-org 4.0 repo file
+  become: yes
+  template:
+    src: mongodb-org-4.0.repo.j2
+    dest: /etc/yum.repos.d/mongodb-org-4.0.repo
+    owner: root
+    group: root
+    mode: 0644
+- name: Update Mongo
+  become: yes
+  yum:
+    name: mongodb-org
+    state: latest
+- name: Install python pip
+  become: yes
+  yum:
+    name: python-pip
+    state: latest
+- name: Verify Service Is Enabled and Running
+  become: yes
+  systemd:
+    name: mongod
+    enabled: yes
+    state: started
+- name: Install pymongo
+  become: yes
+  pip:
+    name: pymongo

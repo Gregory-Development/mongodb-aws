@@ -1,0 +1,7 @@
+---
+mongo_ip_address: 0.0.0.0
+mongo_port: 27019
+mongo_admin_username: mongo-admin
+mongo_admin_password: testtesttest123
+repl_set_name: configReplSet
+sharding_role: "configsvr"

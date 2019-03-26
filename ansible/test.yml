@@ -1,0 +1,6 @@
+---
+- hosts: mongo-config-hosts
+  gather_facts: True
+  tasks:
+    - debug:
+        msg: "{{ hostvars[groups['mongo-config-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"

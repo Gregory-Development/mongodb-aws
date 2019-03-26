@@ -1,0 +1,10 @@
+---
+- name: Join shard 1 to cluster
+  vars:
+    shard1: "{{ hostvars[groups['mongo-shard-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 -u "{{ mongo_admin_user }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(sh.addShard( "{{ shard1 }}:27017" ))\'
+
+- name: Join shard 2 to cluster
+  vars:
+    shard2: "{{ hostvars[groups['mongo-shard-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 -u "{{ mongo_admin_user }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(sh.addShard( "{{ shard2 }}:27017" ))\'

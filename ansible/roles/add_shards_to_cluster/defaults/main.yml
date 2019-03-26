@@ -1,0 +1,5 @@
+---
+mongo_port: 27017
+mongo_ip_address: 0.0.0.0
+mongo_admin_user: mongo-admin
+mongo_admin_password: testtesttest123

@@ -1,6 +1,30 @@
 ---
-- hosts: mongo-hosts
+- hosts: mongo
   become: yes
   tasks:
     - import_role:
-        name: verify_mongo
+        name: install_mongo
+
+- hosts: mongo-config-hosts
+  become: yes
+  tasks:
+    - import_role:
+        name: install_cluster_config_servers
+
+- hosts: mongo-query-router-hosts
+  become: yes
+  tasks:
+    - import_role:
+        name: install_cluster_query_router
+
+- hosts: mongo-shard-hosts
+  become: yes
+  tasks:
+    - import_role:
+        name: install_cluster_shards
+
+- hosts: mongo-query-router-hosts
+  become: yes
+  tasks:
+    - import_role:
+        name: add_shards_to_cluster

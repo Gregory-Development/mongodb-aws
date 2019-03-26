@@ -1,5 +1,5 @@
 resource "aws_instance" "mongodb_one" {
-  ami = "ami-03924a39bbec9cb51"
+  ami = "ami-02bcbb802e03574ba"
   instance_type = "t2.micro"
 
   root_block_device {

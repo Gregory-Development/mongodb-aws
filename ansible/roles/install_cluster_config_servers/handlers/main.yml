@@ -1,0 +1,17 @@
+---
+- name: stop mongod
+  become: yes
+  systemd:
+    name: mongod
+    state: stopped
+- name: remove pid file
+  become: yes
+  file:
+    path: /var/run/mongodb/mongod.pid
+    state: absent
+  notify: start mongo
+- name: start mongo
+  become: yes
+  systemd:
+    name: mongod
+    state: started

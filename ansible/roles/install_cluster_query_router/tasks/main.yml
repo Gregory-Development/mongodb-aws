@@ -1,0 +1,60 @@
+---
+- name: Add Mongo Admin User
+  mongodb_user:
+    database: admin
+    name: "{{ mongo_admin_username }}"
+    password: "{{ mongo_admin_password }}"
+    state: present
+    roles: root
+
+- name: Create new MongoDB opt directory
+  become: yes
+  file:
+    name: /opt/mongodb
+    state: directory
+
+- name: Generate New Keys
+  become: yes
+  raw: openssl rand -base64 756 | sudo tee /opt/mongodb/mongodb-keyfile
+
+- name: Change keyfile ownership
+  become: yes
+  file:
+    path: /opt/mongodb/mongodb-keyfile
+    owner: mongod
+    group: mongod
+    mode: 0400
+
+- name: Stop Mongo
+  become: yes
+  systemd:
+    name: mongod
+    state: stopped
+
+- name: Add mongo config file
+  become: yes
+  vars:
+    conf0: "{{ hostvars[groups['mongo-config-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    conf1: "{{ hostvars[groups['mongo-config-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    conf2: "{{ hostvars[groups['mongo-config-hosts'][2]]['ansible_eth0']['ipv4']['address'] }}"
+  template:
+    src: mongos.conf.j2
+    dest: /etc/mongos.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Add mongos unit file
+  become: yes
+  template:
+    src: mongos.service.j2
+    dest: /lib/systemd/system/mongos.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Start Mongos
+  become: yes
+  systemd:
+    name: mongos
+    state: started

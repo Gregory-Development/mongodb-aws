@@ -1,6 +1,20 @@
-[mongo-hosts]
-18.217.208.232 ansible_ssh_private_key_file=~/.ssh/mongo.pem
-52.15.186.68 ansible_ssh_private_key_file=~/.ssh/mongo.pem
-18.221.207.214 ansible_ssh_private_key_file=~/.ssh/mongo.pem
-18.217.71.79 ansible_ssh_private_key_file=~/.ssh/mongo.pem
-18.191.158.84 ansible_ssh_private_key_file=~/.ssh/mongo.pem
+[mongo-config-hosts]
+3.18.212.29
+3.18.112.100
+18.218.10.37
+
+[mongo-query-router-hosts]
+18.191.193.141
+
+[mongo-shard-hosts]
+3.16.11.247
+3.18.109.82
+
+[mongo:children]
+mongo-config-hosts
+mongo-query-router-hosts
+mongo-shards
+
+[mongo:vars]
+ansible_ssh_private_key_file=~/.ssh/mongo.pem
+ansible_user=ec2-user

@@ -1,0 +1,28 @@
+---
+- name: Stop mongod
+  become: yes
+  systemd:
+    name: mongod
+    state: stopped
+
+- name: Add mongod.conf file
+  become: yes
+  template:
+    src: mongod.conf.j2
+    dest: /etc/mongod.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Start Mongod
+  become: yes
+  systemd:
+    name: mongod
+    state: started
+
+- name: Join shard 1 to cluster
+  vars:
+    qr1: "stuff"
+    shard1: "stuff"
+    shard2: "stuff"
+  command: mongo "{{ qr1 }}":27017 -u "{{ mongo_admin_user }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(sh.addShard( "{{ shard1 }}:27017" ))\'
