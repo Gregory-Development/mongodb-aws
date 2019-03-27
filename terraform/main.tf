@@ -4,55 +4,55 @@ provider "aws" {
 
 module "ec2_1" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_CONFIG_1"
+  name = "MONGODB_CONFIG_0_0"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_2" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_CONFIG_2"
+  name = "MONGODB_CONFIG_0_1"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_3" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_CONFIG_3"
+  name = "MONGODB_CONFIG_0_2"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_4" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_QUERY_ROUTER_1"
+  name = "MONGODB_QUERY_ROUTER_0_0"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_5" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_QUERY_ROUTER_2"
+  name = "MONGODB_QUERY_ROUTER_0_1"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_6" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_SHARD_1_1"
+  name = "MONGODB_SHARD_0_0"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_7" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_SHARD_1_2"
+  name = "MONGODB_SHARD_0_1"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_8" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_SHARD_2_1"
+  name = "MONGODB_SHARD_1_0"
   security_groups = "${module.sg.name}"
 }
 
 module "ec2_9" {
   source = "./mods/ec2_instances"
-  name = "MONGODB_SHARD_2_2"
+  name = "MONGODB_SHARD_1_1"
   security_groups = "${module.sg.name}"
 }
 
@@ -73,17 +73,17 @@ ${module.ec2_3.pub_ip_address}
 ${module.ec2_4.pub_ip_address}
 ${module.ec2_5.pub_ip_address}
 
-[mongo-shard-1-hosts]
+[mongo-shard-0-hosts]
 ${module.ec2_6.pub_ip_address}
 ${module.ec2_7.pub_ip_address}
 
-[mongo-shard-2-hosts]
+[mongo-shard-1-hosts]
 ${module.ec2_8.pub_ip_address}
 ${module.ec2_9.pub_ip_address}
 
 [mongo-shard-hosts:children]
+mongo-shard-0-hosts
 mongo-shard-1-hosts
-mongo-shard-2-hosts
 
 [mongo:children]
 mongo-config-hosts

@@ -35,11 +35,11 @@ security:
 
 #operationProfiling:
 
-replication:
-  replSetName: {{ repl_set_name }}
+#replication:
+#  replSetName: {{ repl_set_name }}
 
 sharding:
-  configDB: configReplSet/{{ conf0 }}:27019,{{ conf1 }}:27019,{{ conf2 }}:27019
+  configDB: {{ config_repl_set }}/{{ conf0 }}:27019, {{ conf1 }}:27019, {{ conf2 }}:27019
 
 ## Enterprise-Only Options
 

@@ -25,6 +25,6 @@
 
 - name: Initialize ReplicaSet
   vars:
-    conf0: "{{ hostvars[groups['mongo-shard-1-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
-    conf1: "{{ hostvars[groups['mongo-shard-1-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    conf0: "{{ hostvars[groups['mongo-shard-0-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    conf1: "{{ hostvars[groups['mongo-shard-0-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
   command: "mongo localhost:27017 --eval 'printjson(rs.initiate({ _id: \"{{ repl_set_name }}\", members: [ { _id: 0, host: \"{{ conf0 }}:27017\" }, { _id: 1, host: \"{{ conf1 }}:27017\" } ] }))'"

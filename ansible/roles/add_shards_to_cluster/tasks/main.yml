@@ -1,10 +1,32 @@
 ---
-- name: Join shard 1 to cluster
+- name: Join shard 0_0 to cluster
   vars:
-    shard1: "{{ hostvars[groups['mongo-shard-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
-  command: mongo localhost:27017 -u "{{ mongo_admin_user }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(sh.addShard( "{{ shard1 }}:27017" ))\'
+    qrs0_0: "{{ hostvars[groups['mongo-query-router-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    qrs0_1: "{{ hostvars[groups['mongo-query-router-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    shard0_0: "{{ hostvars[groups['mongo-shard-0-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    shard0_1: "{{ hostvars[groups['mongo-shard-0-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 --eval \'printjson(sh.addShard( "rs0/{{ shard0_0 }}:27017" ))\'
 
-- name: Join shard 2 to cluster
+- name: Join shard 0_1 to cluster
   vars:
-    shard2: "{{ hostvars[groups['mongo-shard-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
-  command: mongo localhost:27017 -u "{{ mongo_admin_user }}" -p "{{ mongo_admin_password }}" --authenticationDatabase admin --quiet --eval \'printjson(sh.addShard( "{{ shard2 }}:27017" ))\'
+    qrs0_0: "{{ hostvars[groups['mongo-query-router-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    qrs0_1: "{{ hostvars[groups['mongo-query-router-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    shard0_0: "{{ hostvars[groups['mongo-shard-0-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    shard0_1: "{{ hostvars[groups['mongo-shard-0-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 --eval \'printjson(sh.addShard( "rs0/{{ shard0_1 }}:27017" ))\'
+
+- name: Join shard 1_0 to cluster
+  vars:
+    qrs0_0: "{{ hostvars[groups['mongo-query-router-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    qrs0_1: "{{ hostvars[groups['mongo-query-router-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    shard1_0: "{{ hostvars[groups['mongo-shard-1-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    shard1_1: "{{ hostvars[groups['mongo-shard-1-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 --eval \'printjson(sh.addShard( "rs1/{{ shard1_0 }}:27017" ))\'
+
+- name: Join shard 1_0 to cluster
+  vars:
+    qrs0_0: "{{ hostvars[groups['mongo-query-router-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    qrs0_1: "{{ hostvars[groups['mongo-query-router-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+    shard1_0: "{{ hostvars[groups['mongo-shard-1-hosts'][0]]['ansible_eth0']['ipv4']['address'] }}"
+    shard1_1: "{{ hostvars[groups['mongo-shard-1-hosts'][1]]['ansible_eth0']['ipv4']['address'] }}"
+  command: mongo localhost:27017 --eval \'printjson(sh.addShard( "rs1/{{ shard1_1 }}:27017" ))\'

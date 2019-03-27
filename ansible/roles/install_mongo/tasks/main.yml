@@ -20,13 +20,6 @@
     name: python-pip
     state: latest
 
-- name: Verify Service Is Enabled and Running
-  become: yes
-  systemd:
-    name: mongod
-    enabled: yes
-    state: started
-
 - name: Install pymongo
   become: yes
   pip:

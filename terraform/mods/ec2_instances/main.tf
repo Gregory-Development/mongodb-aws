@@ -15,10 +15,6 @@ resource "aws_instance" "mongodb_one" {
 
   key_name = "mongo"
 
-  provisioner "local-exec" {
-    command = "openssl rand -base64 756"
-  }
-
   tags {
     Name = "${var.name}"
   }

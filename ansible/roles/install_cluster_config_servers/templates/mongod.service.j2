@@ -1,11 +1,11 @@
 [Unit]
-Description=Mongo Cluster Router
+Description=Mongo Config
 After=network.target
 
 [Service]
 User=mongod
 Group=mongod
-ExecStart=/usr/bin/mongos --configdb "{{ config_repl_set }}/{{ conf0 }}:27019, {{ conf1 }}:27019, {{ conf2 }}:27019," --keyFile /opt/mongodb/mongodb-keyfile
+ExecStart=/usr/bin/mongod --config /etc/mongos.conf
 # file size
 LimitFSIZE=infinity
 # cpu time
